@@ -1,6 +1,9 @@
 <h1>Seja bem-vindo</h1>
 
-<ul>
-    <li>
-        <%= link_to "Cadastro de moedas", coins_path %>
-<ul>
+<p><strong>Data: </strong> <%= data_br(Date.today)%> </p>
+
+<%= render "menu" %>
+
+<p>
+Você está em um ambiente de <strong> <%= ambiente_rails %> </strong> 
+</p>
