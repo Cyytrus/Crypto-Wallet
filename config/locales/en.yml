@@ -31,3 +31,21 @@
 
 en:
   hello: "Hello world"
+
+  links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+
+  descs:
+    description: "Description"
+    acronym: "Acronym"
+    image: "Image"
+  
+  confirm: "Are you sure? The deleted option can't be recovered."
+
+  titles:
+    new_mining: "New mining type"
+    mining: "Mining Types"
+    new_coin: "New coin"
+    coins: "Coins"

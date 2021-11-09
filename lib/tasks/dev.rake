@@ -5,8 +5,9 @@ namespace :dev do
       show_spinner("Apagando BD...") { %x(rails db:drop) }
       show_spinner("Criando BD...") { %x(rails db:create) }
       show_spinner("Migrando BD...") { %x(rails db:migrate) }
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
+      
     else
       puts "Você não está no ambiente de desenvolvimento"
     end
@@ -19,39 +20,45 @@ namespace :dev do
                   {
                     description: "Bitcoin",
                     acronym: "BTC",
-                    url_image: "https://imagensemoldes.com.br/wp-content/uploads/2020/09/Imagem-Dinheiro-Bitcoin-PNG.png"
+                    url_image: "https://imagensemoldes.com.br/wp-content/uploads/2020/09/Imagem-Dinheiro-Bitcoin-PNG.png",
+                    mining_type: MiningType.find_by(acronym: "PoW")
                   },
 
 
                   {
                     description: "Ethereum",
                     acronym: "ETH",
-                    url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ETHEREUM-YOUTUBE-PROFILE-PIC.png/600px-ETHEREUM-YOUTUBE-PROFILE-PIC.png"
+                    url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ETHEREUM-YOUTUBE-PROFILE-PIC.png/600px-ETHEREUM-YOUTUBE-PROFILE-PIC.png",
+                    mining_type: MiningType.all.sample
                   },
 
 
                   {
                     description: "Dash",
                     acronym: "DASH",
-                    url_image: "https://waytomine.com/wp-content/uploads/2018/11/Dashcoin-Logo.png"
+                    url_image: "https://waytomine.com/wp-content/uploads/2018/11/Dashcoin-Logo.png",
+                    mining_type: MiningType.all.sample
                   },
 
                   {
                     description: "Iota",
                     acronym: "MIOTA",
-                    url_image: "https://img1.gratispng.com/20180901/obr/kisspng-iota-cryptocurrency-blockchain-directed-acyclic-gr-bitcoinaverge-cryptocurrency-marketcap-amp-excha-5b8a2f02021038.2767078915357826580085.jpg"
+                    url_image: "https://img1.gratispng.com/20180901/obr/kisspng-iota-cryptocurrency-blockchain-directed-acyclic-gr-bitcoinaverge-cryptocurrency-marketcap-amp-excha-5b8a2f02021038.2767078915357826580085.jpg",
+                    mining_type: MiningType.all.sample
                   },
 
                   {
                     description: "ZCash",
                     acronym: "ZEC",
-                    url_image: "https://img2.gratispng.com/20180524/rbc/kisspng-zcash-logo-cryptocurrency-cash-coupons-5b06a838ea8466.5309779315271629369606.jpg"
+                    url_image: "https://img2.gratispng.com/20180524/rbc/kisspng-zcash-logo-cryptocurrency-cash-coupons-5b06a838ea8466.5309779315271629369606.jpg",
+                    mining_type: MiningType.all.sample
                   },
 
                   {
                     description: "Cardano",
                     acronym: "ADA",
-                    url_image: "https://logospng.org/download/cardano/logo-cardano-512.png"
+                    url_image: "https://logospng.org/download/cardano/logo-cardano-512.png",
+                    mining_type: MiningType.all.sample
                   }
                 ]  
       coins.each do |coin|
