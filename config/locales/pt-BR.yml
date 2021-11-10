@@ -1,5 +1,8 @@
 pt-BR:
-  actual_locale: 'Português do Brasil'
+  current_locale: 'Português do Brasil'
+  welcome: 'Olá! Seja muito bem vindo(a)'
+  introduction1: 'Esta é apenas uma simples Crypto Wallet.'
+  options: 'Opções disponíveis:'
 
   links:
     edit: "Editar"
@@ -8,13 +11,28 @@ pt-BR:
     
   descs:
     description: "Descrição"
+    description1: "Descrição:"
     acronym: "Sigla"
+    acronym1: "Sigla:"
     image: "Imagem"
+    image1: "Imagem:"
   
   confirm: "Tem certeza? A opção excluída não poderá ser recuperada."
 
   titles:
-    new_mining: "Novos tipos de mineração"
+    new_mining: "Novo tipo de mineração"
+    new_mining1: "Novo tipo de mineração"
     mining: "Tipos de mineração"
     new_coin: "Nova moeda"
     coins: "Moedas"
+
+  edit_coins:
+    title: "Editando Moeda"
+    back: "Voltar"
+    show: "Mostrar"
+    update: "Atualizar Moeda"
+  edit_mining:
+    title: "Editando Tipo de mineração"
+    back: "Voltar"
+    show: "Mostrar"
+    update: "Atualizar Tipo de mineração"

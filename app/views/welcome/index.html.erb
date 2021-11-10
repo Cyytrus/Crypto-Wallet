@@ -1,16 +1,8 @@
-<p>
-<%= link_to 'Português', root_path(locale: 'pt-BR')%>
-</p>
-<p>
-<%= link_to 'English', root_path(locale: 'en')%>
-</p>
+<div class="jumbotron">
+  <h1 class="display-4"><%=t('welcome')%></h1>
+  <p class="lead"><%=t('introduction1')%></p>
+  <hr class="my-4">
+  <p><%=t('options')%></p>
+  <%= render "menu" %>
+</div>
 
-<h1>Seja bem-vindo</h1>
-<p>Sua aplicação Rails está no idioma: <strong> <%=t('actual_locale')%> </strong> </p>
-<p><strong> Horas: </strong><%= l(Time.now) %></p>
-
-<%= render "menu" %>
-
-<p>
-Você está em um ambiente de <strong> <%= ambiente_rails %> </strong> 
-</p>

@@ -31,7 +31,10 @@
 
 en:
   hello: "Hello world"
-  actual_locale: 'English'
+  current_locale: 'English'
+  welcome: 'Hello! Welcome!'
+  introduction1: 'This is just a simple Crypto Wallet.'
+  options: 'Available Options:'
 
   links:
     edit: "Edit"
@@ -40,13 +43,28 @@ en:
 
   descs:
     description: "Description"
+    description1: "Description:"
     acronym: "Acronym"
+    acronym1: "Acronym:"
     image: "Image"
-  
+    image1: "Image:"
+
   confirm: "Are you sure? The deleted option can't be recovered."
 
   titles:
     new_mining: "New mining type"
+    new_mining1: "New mining type"
     mining: "Mining Types"
     new_coin: "New coin"
     coins: "Coins"
+
+  edit_coins:
+    title: "Editing Coin"
+    back: "Back"
+    show: "Show"
+    update: "Update Coin"
+  edit_mining:
+    title: "Editing Mining type"
+    back: "Back"
+    show: "Show"
+    update: "Update Mining type"
