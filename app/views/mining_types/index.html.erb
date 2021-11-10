@@ -5,8 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th><%= t('descs.description')%></th>
-      <th><%=t('descs.acronym')%></th>
+      <th><%= @mining_types.human_attribute_name(:description) %></th>
+      <th><%=@mining_types.human_attribute_name(:acronym)%></th>
       <th colspan="3"></th>
     </tr>
   </thead>

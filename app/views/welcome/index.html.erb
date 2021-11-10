@@ -1,6 +1,12 @@
+<p>
+<%= link_to 'Português', root_path(locale: 'pt-BR')%>
+</p>
+<p>
+<%= link_to 'English', root_path(locale: 'en')%>
+</p>
+
 <h1>Seja bem-vindo</h1>
-<p>Sua aplicação Rails está no idioma: <strong> <%= locale %></strong> </p>
-<p><strong>Data: </strong> <%= l(Date.today) %> </p>
+<p>Sua aplicação Rails está no idioma: <strong> <%=t('actual_locale')%> </strong> </p>
 <p><strong> Horas: </strong><%= l(Time.now) %></p>
 
 <%= render "menu" %>
