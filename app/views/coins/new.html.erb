@@ -1,5 +1,5 @@
-<h1>New Coin</h1>
+<h1><%=t('titles.new_coin')%></h1>
 
 <%= render 'form', coin: @coin %>
 
-<%= link_to 'Back', coins_path %>
+<%= link_to t('edit_coins.back'), coins_path, class:"btn btn-primary btn-sm" %>

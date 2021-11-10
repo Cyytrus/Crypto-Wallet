@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      coin:
+        one: 'Coin'
+        other: 'Coins'
+      mining_type:
+        one: 'Mining Type'
+        other: 'Mining Types'
+
