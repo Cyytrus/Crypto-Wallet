@@ -69,7 +69,7 @@ end
 
 group :production do
   
-  gem 'postgres-pr'
+  gem 'pg'
 
 end
 
